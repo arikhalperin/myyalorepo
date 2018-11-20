@@ -1,0 +1,108 @@
+Pod::Spec.new do |s|
+  s.name         = "SipiOSDebug"
+  s.version      = "0.1.3"
+  s.summary      = "Sip library for ios"
+  s.description  = "Pjsip, Webrtc, and openSSL"
+  s.homepage     = "https://github.com/yaloapp/yallo-sip-repo"
+  s.license      = {:type => "Copyright",
+                    :text => "      Copyright 2009 - 2015 Yallo, Inc. All rights reserved.\n" }
+  s.authors      = { 'Raymoond Tang' => 'raymoond@yallo.com' }
+
+  s.platform     = :ios, '7.0'
+  s.requires_arc = true
+
+  s.source       = { :git => "ssh://git@github.com/yaloapp/yallo-sip-repo.git", :tag => '0.1.3'}
+
+
+  s.preserve_paths = 'openSSL/ios/debug/lib','pjsip/ios/debug/lib', 'webrtc/ios/debug/lib', 'OpenSSL/ios/debug/include/**/*.h','pjsip/ios/debug/include/**/*.h','pjsip/ios/debug/include/**/*.hpp','webrtc/ios/debug/include/**/*.h'
+  s.library   = 'CNG',
+                'G711',
+                'G722',
+                'PCM16B',
+                'apprtc_signaling',
+                'audio_coding_module',
+                'audio_conference_mixer',
+                'audio_decoder_interface',
+                'audio_device',
+                'audio_encoder_interface',
+                'audio_processing',
+                'audio_processing_sse2',
+                'bitrate_controller',
+                'boringssl',
+                'channel_transport',
+                'common_audio',
+                'common_audio_sse2',
+                'common_video',
+                'expat',
+                'field_trial_default',
+                'iLBC',
+                'iSAC',
+                'iSACFix',
+                'jingle_media',
+                'jingle_p2p',
+                'jingle_peerconnection',
+                'jingle_peerconnection_objc',
+                'jsoncpp',
+                'media_file',
+                'metrics_default',
+                'neteq',
+                'opus',
+                'paced_sender',
+                'red',
+                'remote_bitrate_estimator',
+                'rtc_base',
+                'rtc_base_approved',
+                'rtc_p2p',
+                'rtc_sound',
+                'rtc_xmllite',
+                'rtc_xmpp',
+                'rtp_rtcp',
+                'socketrocket',
+                'srtp',
+                'system_wrappers',
+                'usrsctplib',
+                'video_capture_module',
+                'video_capture_module_internal_impl',
+                'video_coding_utility',
+                'video_engine_core',
+                'video_processing',
+                'video_processing_sse2',
+                'video_render_module',
+                'video_render_module_internal_impl',
+                'voice_engine',
+                'vpx',
+                'vpx_intrinsics_avx2',
+                'vpx_intrinsics_mmx',
+                'vpx_intrinsics_sse2',
+                'vpx_intrinsics_sse4_1',
+                'vpx_intrinsics_ssse3',
+                'webrtc',
+                'webrtc_common',
+                'webrtc_i420',
+                'webrtc_opus',
+                'webrtc_utility',
+                'webrtc_video_coding',
+                'webrtc_vp8',
+                'webrtc_vp9',
+                'yuv',
+                'g7221codec-arm-apple-darwin9-universal',
+                'gsmcodec-arm-apple-darwin9-universal',
+                'ilbccodec-arm-apple-darwin9-universal',
+                'pj-arm-apple-darwin9-universal',
+                'pjlib-util-arm-apple-darwin9-universal',
+                'pjmedia-arm-apple-darwin9-universal',
+                'pjmedia-audiodev-arm-apple-darwin9-universal',
+                'pjmedia-codec-arm-apple-darwin9-universal',
+                'pjmedia-videodev-arm-apple-darwin9-universal',
+                'pjnath-arm-apple-darwin9-universal',
+                'pjsdp-arm-apple-darwin9-universal',
+                'pjsip-arm-apple-darwin9-universal',
+                'pjsip-simple-arm-apple-darwin9-universal',
+                'pjsip-ua-arm-apple-darwin9-universal',
+                'pjsua-arm-apple-darwin9-universal',
+                'resample-arm-apple-darwin9-universal',
+                'speex-arm-apple-darwin9-universal',
+                'srtp-arm-apple-darwin9-universal'
+
+  s.xcconfig  =  { :LIBRARY_SEARCH_PATHS => '"$(PODS_ROOT)/SipiOSDebug/openSSL/ios/debug/lib" "$(PODS_ROOT)/SipiOSDebug/pjsip/ios/debug/lib" "$(PODS_ROOT)/SipiOSDebug/webrtc/ios/debug/lib"'}
+end

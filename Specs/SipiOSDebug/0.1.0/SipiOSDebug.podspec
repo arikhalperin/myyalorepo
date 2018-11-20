@@ -1,0 +1,107 @@
+Pod::Spec.new do |s|
+  s.name         = "SipiOSDebug"
+  s.version      = "0.1.0"
+  s.summary      = "Sip library for Mac"
+  s.description  = "Pjsip, Webrtc, and openSSL"
+  s.homepage     = "https://github.com/yaloapp/yallo-sip-repo"
+  s.license      = {:type => "Copyright",
+                    :text => "      Copyright 2009 - 2015 Yallo, Inc. All rights reserved.\n" }
+  s.authors      = { 'Raymoond Tang' => 'raymoond@yallo.com' }
+
+  s.platform     = :ios, '7.0'
+  s.requires_arc = true
+
+  s.source       = { :git => "ssh://git@github.com/yaloapp/yallo-sip-repo.git", :tag => '0.1.7'}
+
+
+  s.preserve_paths = 'openSSL/ios/debug/lib','pjsip/ios/debug/lib', 'webrtc/ios/debug/lib', 'OpenSSL/ios/debug/include/**/*.h','pjsip/ios/debug/include/**/*.h','pjsip/ios/debug/include/**/*.hpp','webrtc/ios/debug/include/**/*.h'
+  s.library   = 'CNG-universal',                                
+                'G711-universal',                               
+                'G722-universal',                               
+                'PCM16B-universal',                             
+                'audio_coding_module-universal',                
+                'audio_conference_mixer-universal',             
+                'audio_decoder_interface-universal',            
+                'audio_device-universal',                       
+                'audio_encoder_interface-universal',            
+                'audio_processing-universal',                   
+                'audio_processing_neon',                        
+                'bitrate_controller-universal',                 
+                'channel_transport-universal',                  
+                'common_audio-universal',                       
+                'common_video-universal',                       
+                'crnspr-universal',                             
+                'crnss-universal',                              
+                'crnssckbi-universal',                          
+                'crssl-universal',                              
+                'expat-universal',                              
+                'field_trial_default-universal',                
+                'iLBC-universal',                               
+                'iSAC-universal',                               
+                'iSACFix-universal',                            
+                'icudata-universal',                            
+                'icui18n-universal',                            
+                'icuuc-universal',                              
+                'jingle_media-universal',                       
+                'jingle_p2p-universal',                         
+                'jingle_peerconnection-universal',              
+                'jsoncpp-universal',                            
+                'media_file-universal',                         
+                'metrics_default-universal',                    
+                'neteq-universal',                              
+                'nss_static-universal',                         
+                'opus-universal',                               
+                'paced_sender-universal',                       
+                'red-universal',                                
+                'remote_bitrate_estimator-universal',           
+                'rtc_base-universal',                           
+                'rtc_base_approved-universal',                  
+                'rtc_p2p-universal',                            
+                'rtc_sound-universal',                          
+                'rtc_xmllite-universal',                        
+                'rtc_xmpp-universal',                           
+                'rtp_rtcp-universal',                           
+                'sqlite_regexp-universal',
+                'srtp-universal',
+                'system_wrappers-universal',
+                'usrsctplib-universal',
+                'video_capture_module-universal',
+                'video_capture_module_internal_impl-universal',
+                'video_coding_utility-universal',
+                'video_engine_core-universal',
+                'video_processing-universal',
+                'video_render_module-universal',
+                'video_render_module_internal_impl-universal',
+                'voice_engine-universal',
+                'vpx-universal',
+                'webrtc-universal',
+                'webrtc_common-universal',
+                'webrtc_i420-universal',
+                'webrtc_opus-universal',
+                'webrtc_utility-universal',
+                'webrtc_video_coding-universal',
+                'webrtc_vp8-universal',
+                'webrtc_vp9-universal',
+                'yuv-universal',
+                'yuv_neon-universal',
+                'g7221codec-arm-apple-darwin9-universal',
+                'gsmcodec-arm-apple-darwin9-universal',
+                'ilbccodec-arm-apple-darwin9-universal',
+                'pj-arm-apple-darwin9-universal',
+                'pjlib-util-arm-apple-darwin9-universal',
+                'pjmedia-arm-apple-darwin9-universal',
+                'pjmedia-audiodev-arm-apple-darwin9-universal',
+                'pjmedia-codec-arm-apple-darwin9-universal',
+                'pjmedia-videodev-arm-apple-darwin9-universal',
+                'pjnath-arm-apple-darwin9-universal',
+                'pjsdp-arm-apple-darwin9-universal',
+                'pjsip-arm-apple-darwin9-universal',
+                'pjsip-simple-arm-apple-darwin9-universal',
+                'pjsip-ua-arm-apple-darwin9-universal',
+                'pjsua-arm-apple-darwin9-universal',
+                'resample-arm-apple-darwin9-universal',
+                'speex-arm-apple-darwin9-universal',
+                'srtp-arm-apple-darwin9-universal'
+
+  s.xcconfig  =  { :LIBRARY_SEARCH_PATHS => '"$(PODS_ROOT)/SipiOSDebug/openSSL/ios/debug/lib" "$(PODS_ROOT)/SipiOSDebug/pjsip/ios/debug/lib" "$(PODS_ROOT)/SipiOSDebug/webrtc/ios/debug/lib"'}
+end

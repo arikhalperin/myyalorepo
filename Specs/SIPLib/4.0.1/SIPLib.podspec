@@ -19,6 +19,5 @@ s.source_files = 'AbstractionLayer/iOS/SipSdkLib/SipSdkLib/DetailClasses.{h,m}',
 
 # s.xcconfig  =  { :LIBRARY_SEARCH_PATHS => '"$(PODS_ROOT)/SipSdkLibiOSMasterRelease/"'}
 
-s.dependency 'VialerSIPLib-private', '2.16.0'
 #s.dependency 'YalloThirdPartyLibsRelease', '~>1.1.47'
 end

@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
   s.version      = "5.0.0"
   s.summary      = "Sip library for ios based on master branch - release"
   s.description  = "libSipSdkLib"
-  s.homepage     = "https://github.com/Secure-Connection/yalo-sipsdk"
+  s.homepage     = "git@github.com:Secure-Connection/yalo-sipsdk"
   s.license      = {:type => "Copyright",
                     :text => "      Copyright 2009 - 2015 Yallo, Inc. All rights reserved.\n" }
   s.authors      = { 'Shaul Kedem' => 'shaul@yallo.com' }

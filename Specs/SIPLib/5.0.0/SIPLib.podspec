@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  s.source       = { :git => "https://github.com/Secure-Connection/yalo-sipsdk.git", :tag => s.version.to_s }
+  s.source       = { :git => "git@github.com:Secure-Connection/yalo-sipsdk.git", :tag => s.version.to_s }
 
   s.source_files = 'AbstractionLayer/iOS/SipSdkLib/SipSdkLib/DetailClasses.{h,m}', 'AbstractionLayer/iOS/SipSdkLib/SipSdkLib/OBJCSIPSdkWrapper.{h,m}'
 
